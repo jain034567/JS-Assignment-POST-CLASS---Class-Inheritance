@@ -1,4 +1,4 @@
-import { component } from ./react;
+import { component } from 'react';
 // declare class
 class Shape exptends Component{
 constructor(props){
