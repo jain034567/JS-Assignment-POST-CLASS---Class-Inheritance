@@ -2,6 +2,8 @@
 import Shape from './shape.js';
 // declare class
 class Circle extends Component{
+  function calculateArea(){
+  }
 render(){
   return (<Shape color = {color} />
 );
