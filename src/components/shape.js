@@ -2,16 +2,21 @@ import { component } from 'react';
 // declare class
 class Shape exptends Component{
 constructor(props){
-super(props);
-  function drawShape(){
-  }
-  function calculateArea(){
-  }
+  super(props);
   this.state = {color: "red"};
+    drawShape()
+    {
+      this.state.color = "green";
+    }
+    calculateArea()
+    {
+      this.state.color = "yellow";
+    }
+  
 }
   render(){
   return(<>
-         <h2> I am a color {this.state.color} </h2>
+         <h1 style = {this.state}> I am a color {this.state.color} </h1>
         </>
         );
   }
