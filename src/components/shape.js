@@ -16,7 +16,7 @@ constructor(props){
 }
   render(){
   return(<>
-         <h1 style = {this.state}> I am a color {this.state.color} </h1>
+         <h1 style = {this.state}> {this.props.color} </h1>
         </>
         );
   }
