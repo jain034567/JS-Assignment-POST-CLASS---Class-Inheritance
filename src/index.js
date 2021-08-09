@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import Circle from "./components/circle.js";
+import Shape from "./components/shape.js";
 class ShapeCircle extends Component {
   render(){
-  return (<div>
-          <Circle color = "blue" />
-          </div>);
+  return (<>
+          <Shape />
+          <Circle />
+          </>);
   }
 }
 
