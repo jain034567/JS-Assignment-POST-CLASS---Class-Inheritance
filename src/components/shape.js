@@ -22,4 +22,4 @@ constructor(props){
   }
 }
 // export class using module.exports
-module.exports default Shape;
+module.exports = Shape;
