@@ -1,5 +1,5 @@
 // import using require
-import Shape from './shape.js';
+import * as Shape from './shape.js';
 // declare class
 class Circle extends Shape{
   constructor(props){
@@ -15,5 +15,5 @@ render(){
   }
   
 }
-module.exports default circle;
+module.exports = Circle;
 // export class using module.exports
