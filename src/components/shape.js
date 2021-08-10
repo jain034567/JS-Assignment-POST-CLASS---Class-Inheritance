@@ -1,25 +1,20 @@
 import { component } from 'react';
 // declare class
-class Shape exptends Component{
-constructor(props){
-  super(props);
-  this.state = {color: "red"};
-    drawShape()
-    {
-      this.state.color = "green";
+class Shape extends Component{
+    constructor(){
+        super();
+        this.state={color:"#000000"};
     }
-    calculateArea()
-    {
-      this.state.color = "yellow";
+    drawShape=()=>{ return shape = 0;};
+    calculateArea=()=>{let area =2*4;
+    return area;};
+    render(){
+        return(<>
+        {this.state.color} 
+        {this.drawShape} 
+        {this.calculateArea}
+        </>);
     }
-  
-}
-  render(){
-  return(<>
-         <h1 style = {this.state}> {this.props.color} </h1>
-        </>
-        );
-  }
 }
 // export class using module.exports
 module.exports = Shape;
