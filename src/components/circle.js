@@ -1,14 +1,30 @@
+// // import using require
+// import Shape from './shape.js';
+// // declare class
+// class Circle extends Shape{
+//     constructor(){
+//         super();
+//     }
+//     render(){
+//         return(<>
+//         <h1>{this.calculateArea}</h1></>);
+//     }
+// }
+// module.exports = Circle;
+// // export class using module.exports
 // import using require
-import Shape from './shape.js';
+var msg = require('./shape.js');
 // declare class
-class Circle extends Shape{
-    constructor(){
-        super();
-    }
-    render(){
-        return(<>
-        <h1>{this.calculateArea}</h1></>);
-    }
-}
-module.exports = Circle;
+
+
 // export class using module.exports
+
+module.exports= class Circle extends msg{
+ constructor(...args){
+  super(...args); 
+ }
+  calculateArea(){
+    console.log("2*pi*r"); 
+   return 10;
+  }
+}
