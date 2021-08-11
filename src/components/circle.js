@@ -4,6 +4,7 @@ import Shape from './shape.js';
 class Circle extends Shape{
     constructor(){
         super();
+        this.state = { color:"red"};
     }
  calculateArea(){return " this is circle";}
     render(){
