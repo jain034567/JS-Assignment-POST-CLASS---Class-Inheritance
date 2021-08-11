@@ -1,15 +1,12 @@
-import { component } from 'react';
+
 // declare class
-class Shape extends Component{
+class Shape {
     constructor(){
         super();
-        this.state={color:"#000000"};
+        this.color:"#000000";
     }
     drawShape(){ return "this is shape";}
     calculateArea(){return "area";}
-    render(){
-        return({this.state.color});
-    }
 }
 // export class using module.exports
 module.exports = Shape;
