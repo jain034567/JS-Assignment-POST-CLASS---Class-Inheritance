@@ -1,5 +1,6 @@
 // import using require
-import Shape from './shape.js';
+var Shape = require('./shape.js'); 
+// import Shape from './shape.js';
 // declare class
 class Circle extends Shape{
     constructor(){
