@@ -5,8 +5,8 @@ class Shape extends Component{
         super();
         this.state={color:"#000000"};
     }
-    drawShape=()=>{ return "this is shape";};
-    calculateArea=()=>{return "area";};
+    drawShape(){ return "this is shape";};
+    calculateArea(){return "area";};
     render(){
         return({this.state.color});
     }
